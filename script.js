@@ -30,3 +30,23 @@ function changePhoto(event) {
       reader.readAsDataURL(file);
   }
 }
+// Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the paragraph element
+  var paragraph = document.getElementById("typing-text");
+
+  // Get the text content of the paragraph
+  var text = paragraph.textContent.trim();
+
+  // Set the text content to an empty string
+  paragraph.textContent = "";
+
+  // Iterate through each character of the text
+  for (var i = 0; i < text.length; i++) {
+      // Use setTimeout to create a delay for each character
+      setTimeout(function (index) {
+          // Append the current character to the paragraph
+          paragraph.textContent += text[index];
+      }, i * 50, i);
+  }
+});
