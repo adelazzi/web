@@ -187,8 +187,9 @@ body {
 }
 
 table {
-    width: 100%;
+    width: 95%;
     border-collapse: collapse;
+    margin-left:2% ;
 }
 
 th, td {
@@ -225,7 +226,7 @@ th {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: black;
   width: 70%;
   height: 70%;
   border-radius: 13px;
@@ -262,4 +263,12 @@ th {
   width: 50%;
   border-radius: 10px;
   margin-top: 30px;
+}
+.vu-content{
+  padding-left: 5px;
+  border-radius: 5px;
+  width: 150px;
+  height: 20px;
+  border: black solid 2px;
+  overflow: hidden;
 }
