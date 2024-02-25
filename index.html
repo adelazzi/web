@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appbar Example</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+
+    <div class="appbar">
+      <a class="profile" href="#dddd">
+        <img src="photo\wallpaperflare.com_wallpaper.jpg" alt="Profile Picture"
+          class="avatar">
+        <span class="name">John Doe</span>
+      </a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">History</a>
+        <a href="#contact">Client</a>
+      </div>
+    </div>
+
+    <div style="padding:10px">
+      <h1>Home</h1>
+      <h3>HI AYA</h3>
+
+      <p>"Know your audience, create compelling content, leverage social media, optimize for SEO, utilize email marketing, seek partnerships, showcase customer testimonials, analyze data, offer incentives, and stay updated for effective marketing."</p>
+
+      <div id="section1" class="row">
+        <div class="cell" onclick="location.href='#section3';">
+          <div class="container" style="background-color: #C2EE9F;">
+            <img src="photo/checked.png" alt="Avatar 1" class="avatar">
+            <div class="text">
+              <h3>Ecepted</h3>
+              <p>23 order</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="container" style="background-color: #FFB5B5;">
+            <img src="photo/error.png" alt="Avatar 2" class="avatar">
+            <div class="text">
+              <h3>rejected</h3>
+              <p>23 order/p>
+              </div>
+            </div>
+
+          </div>
+          <div class="cell">
+            <div class="container" style="background-color: #AFB5AA;">
+              <img src="photo/clock.png" alt="Avatar 4" class="avatar">
+              <div class="text">
+                <h3>On hold</h3>
+                <p>23 order</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cell">
+            <div class="container" style="background-color: #ECEE9F;">
+              <img src="photo/coin.png" alt="Avatar 1" class="avatar">
+              <div class="text">
+                <h3>Ecepted</h3>
+                <p>23 order</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="section2" style="height: 340px; background: #D9D9D9;"
+          class="section">
+
+          <img src="photo/Chart.png" alt="Centered Photo">
+          <h4>Weekly demand curve</h4>
+        </div>
+        <div id="section3">
+          <div class="row">
+            <img src="photo/checked.png" alt="Avatar 1" class="avatar">
+            <h3>accepted 25 Requests </h3>
+          </div>
+
+          <table>
+            <thead style="backgrond-color:green;">
+              <tr>
+                <th>ID</th>
+                <th>Photo</th>
+                <th>Title</th>
+                <th>Type</th>
+                <th>Space</th>
+                <th>Price</th>
+                <th>VU</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><img src="photo/Group 8.png" alt="Photo 1"
+                    style="max-width: 50px; max-height: 50px;"></td>
+                <td>Title 1</td>
+                <td>Type 1</td>
+                <td>Space 1</td>
+                <td>$1000</td>
+                <td>100</td>
+                <td><button>Action 1</button></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><img src="photo/Group 8.png" alt="Photo 2"
+                    style="max-width: 50px; max-height: 50px;"></td>
+                <td>Title 2</td>
+                <td>Type 2</td>
+                <td>Space 2</td>
+                <td>$1500</td>
+                <td>120</td>
+                <td><img class="boot" src="photo/edit.png" alt
+                    onclick="location.href='#section2';"><img
+                    src="photo/remove.png" alt></td>
+              </tr>
+                           <tr>
+                <td>2</td>
+                <td><img src="photo/Group 8.png" alt="Photo 2"
+                    style="max-width: 50px; max-height: 50px;"></td>
+                <td>Title 2</td>
+                <td>Type 2</td>
+                <td>Space 2</td>
+                <td>$1500</td>
+                <td>120</td>
+                <td>
+                  <img class="boot" src="photo/edit.png" alt="" onclick="showContainer1();" onmouseover="addShadow();" onmouseout="removeShadow();">
+                  <div id="overlay" onclick="hideContainer1();"></div>
+                  <div id="container1">
+                    <div class="container-content">
+                        <!-- Left side -->
+                        <div class="left-side">
+                  <label for="photoInput"><h1>Photo</h1></label>
+                  <div class="sidephoto"><p>photo 1</p></div>
+                  <div class="otherphoto"><p>photos</p></div>
+                  
+              </div>
+                
+                        <!-- Separator -->
+
+                        <div class="tdd"></div>
+                        <!-- Right side -->
+                        <div class="right-side">
+                            <div class="vu-section">
+                                <div class="vu-label">
+                                    <h3>Title</h3>
+                                </div>
+                                <div class="vu-content" contenteditable="true">23</div>
+                            </div>
+                            <div class="vu-section">
+                                <div class="vu-label">
+                                    <h3>Type</h3>
+                                </div>
+                                <div class="vu-content" contenteditable="true">23</div>
+                            </div>
+                            <div class="vu-section">
+                                <div class="vu-label">
+                                    <h3>Space</h3>
+                                </div>
+                                <div class="vu-content" contenteditable="true">23</div>
+                            </div>
+                            <div class="vu-section">
+                                <div class="vu-label">
+                                    <h3>Price</h3>
+                                </div>
+                                <div class="vu-content" contenteditable="true">23</div>
+                            </div>
+                            <div class="vu-section">
+                                <div class="vu-label">
+                                    <h3>VU</h3>
+                                </div>
+                                <div class="vu-content" contenteditable="true">23</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                  
+                  <img
+                    src="photo/remove.png" alt></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <div id="section4">
+          <div class="row">
+            <img src="photo/checked.png" alt="Avatar 1" class="avatar">
+            <h3>accepted 25 Requests </h3>
+          </div>
+
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Photo</th>
+                <th>Title</th>
+                <th>Type</th>
+                <th>Space</th>
+                <th>Price</th>
+                <th>VU</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><img src="photo/Group 8.png" alt="Photo 1"
+                    style="max-width: 50px; max-height: 50px;"></td>
+                <td>Title 1</td>
+                <td>Type 1</td>
+                <td>Space 1</td>
+                <td>$1000</td>
+                <td>100</td>
+                <td><button>Action 1</button></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><img src="photo/Group 8.png" alt="Photo 2"
+                    style="max-width: 50px; max-height: 50px;"></td>
+                <td>Title 2</td>
+                <td>Type 2</td>
+                <td>Space 2</td>
+                <td>$1500</td>
+                <td>120</td>
+                <td><img class="boot" src="photo/edit.png" alt
+                    onclick="location.href='#section2';"><img
+                    src="photo/remove.png" alt></td>
+              </tr>
+                           <tr>
+                <td>2</td>
+                <td><img src="photo/Group 8.png" alt="Photo 2"
+                    style="max-width: 50px; max-height: 50px;"></td>
+                <td>Title 2</td>
+                <td>Type 2</td>
+                <td>Space 2</td>
+                <td>$1500</td>
+                <td>120</td>
+                <td>
+                  <img class="boot" src="photo/edit.png" alt="" onclick="showContainer1();" onmouseover="addShadow();" onmouseout="removeShadow();">
+                  <div id="overlay" onclick="hideContainer1();"></div>
+                  <div id="container1">
+                    <div class="container-content">
+                        <!-- Left side -->
+                        <div class="left-side">
+                  <label for="photoInput"><h1>Photo</h1></label>
+                  <div class="sidephoto"><p>photo 1</p></div>
+                  <div class="otherphoto"><p>photos</p></div>
+                  
+              </div>
+                
+                        <!-- Separator -->
+
+                        <div class="tdd"></div>
+                        <!-- Right side -->
+                        <div class="right-side">
+                            <div class="vu-section">
+                                <div class="vu-label">
+                                    <h3>Title</h3>
+                                </div>
+                                <div class="vu-content" contenteditable="true">23</div>
+                            </div>
+                            <div class="vu-section">
+                                <div class="vu-label">
+                                    <h3>Type</h3>
+                                </div>
+                                <div class="vu-content" contenteditable="true">23</div>
+                            </div>
+                            <div class="vu-section">
+                                <div class="vu-label">
+                                    <h3>Space</h3>
+                                </div>
+                                <div class="vu-content" contenteditable="true">23</div>
+                            </div>
+                            <div class="vu-section">
+                                <div class="vu-label">
+                                    <h3>Price</h3>
+                                </div>
+                                <div class="vu-content" contenteditable="true">23</div>
+                            </div>
+                            <div class="vu-section">
+                                <div class="vu-label">
+                                    <h3>VU</h3>
+                                </div>
+                                <div class="vu-content" contenteditable="true">23</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                  
+                  <img
+                    src="photo/remove.png" alt></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <div id="section5">
+          <div class="row">
+            <img src="photo/checked.png" alt="Avatar 1" class="avatar">
+            <h3>accepted 25 Requests </h3>
+          </div>
+
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Photo</th>
+                <th>Title</th>
+                <th>Type</th>
+                <th>Space</th>
+                <th>Price</th>
+                <th>VU</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><img src="photo/Group 8.png" alt="Photo 1"
+                    style="max-width: 50px; max-height: 50px;"></td>
+                <td>Title 1</td>
+                <td>Type 1</td>
+                <td>Space 1</td>
+                <td>$1000</td>
+                <td>100</td>
+                <td><button>Action 1</button></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><img src="photo/Group 8.png" alt="Photo 2"
+                    style="max-width: 50px; max-height: 50px;"></td>
+                <td>Title 2</td>
+                <td>Type 2</td>
+                <td>Space 2</td>
+                <td>$1500</td>
+                <td>120</td>
+                <td><img class="boot" src="photo/edit.png" alt
+                    onclick="location.href='#section2';"><img
+                    src="photo/remove.png" alt></td>
+              </tr>
+                           <tr>
+                <td>2</td>
+                <td><img src="photo/Group 8.png" alt="Photo 2"
+                    style="max-width: 50px; max-height: 50px;"></td>
+                <td>Title 2</td>
+                <td>Type 2</td>
+                <td>Space 2</td>
+                <td>$1500</td>
+                <td>120</td>
+                <td>
+                  <img class="boot" src="photo/edit.png" alt="" onclick="showContainer1();" onmouseover="addShadow();" onmouseout="removeShadow();">
+                  <div id="overlay" onclick="hideContainer1();"></div>
+                  <div id="container1">
+                    <div class="container-content">
+                        <!-- Left side -->
+                        <div class="left-side">
+                  <label for="photoInput"><h1>Photo</h1></label>
+                  <div class="sidephoto"><p>photo 1</p></div>
+                  <div class="otherphoto"><p>photos</p></div>
+                  
+              </div>
+                
+                        <!-- Separator -->
+
+                        <div class="tdd"></div>
+                        <!-- Right side -->
+                        <div class="right-side">
+                            <div class="vu-section">
+                                <div class="vu-label">
+                                    <h3>Title</h3>
+                                </div>
+                                <div class="vu-content" contenteditable="true">23</div>
+                            </div>
+                            <div class="vu-section">
+                                <div class="vu-label">
+                                    <h3>Type</h3>
+                                </div>
+                                <div class="vu-content" contenteditable="true">23</div>
+                            </div>
+                            <div class="vu-section">
+                                <div class="vu-label">
+                                    <h3>Space</h3>
+                                </div>
+                                <div class="vu-content" contenteditable="true">23</div>
+                            </div>
+                            <div class="vu-section">
+                                <div class="vu-label">
+                                    <h3>Price</h3>
+                                </div>
+                                <div class="vu-content" contenteditable="true">23</div>
+                            </div>
+                            <div class="vu-section">
+                                <div class="vu-label">
+                                    <h3>VU</h3>
+                                </div>
+                                <div class="vu-content" contenteditable="true">23</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                  
+                  <img
+                    src="photo/remove.png" alt></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <div id="section6">
+          <div class="row">
+            <img src="photo/checked.png" alt="Avatar 1" class="avatar">
+            <h3>accepted 25 Requests </h3>
+          </div>
+
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Photo</th>
+                <th>Title</th>
+                <th>Type</th>
+                <th>Space</th>
+                <th>Price</th>
+                <th>VU</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><img src="photo/Group 8.png" alt="Photo 1"
+                    style="max-width: 50px; max-height: 50px;"></td>
+                <td>Title 1</td>
+                <td>Type 1</td>
+                <td>Space 1</td>
+                <td>$1000</td>
+                <td>100</td>
+                <td><button>Action 1</button></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><img src="photo/Group 8.png" alt="Photo 2"
+                    style="max-width: 50px; max-height: 50px;"></td>
+                <td>Title 2</td>
+                <td>Type 2</td>
+                <td>Space 2</td>
+                <td>$1500</td>
+                <td>120</td>
+                <td><img class="boot" src="photo/edit.png" alt
+                    onclick="location.href='#section2';"><img
+                    src="photo/remove.png" alt></td>
+              </tr>
+                           <tr>
+                <td>2</td>
+                <td><img src="photo/Group 8.png" alt="Photo 2"
+                    style="max-width: 50px; max-height: 50px;"></td>
+                <td>Title 2</td>
+                <td>Type 2</td>
+                <td>Space 2</td>
+                <td>$1500</td>
+                <td>120</td>
+                <td>
+                  <img class="boot" src="photo/edit.png" alt="" onclick="showContainer1();" onmouseover="addShadow();" onmouseout="removeShadow();">
+                  <div id="overlay" onclick="hideContainer1();"></div>
+                  <div id="container1">
+                    <div class="container-content">
+                        <!-- Left side -->
+                        <div class="left-side">
+                  <label for="photoInput"><h1>Photo</h1></label>
+                  <div class="sidephoto"><p>photo 1</p></div>
+                  <div class="otherphoto"><p>photos</p></div>
+                  
+              </div>
+                
+                        <!-- Separator -->
+
+                        <div class="tdd"></div>
+                        <!-- Right side -->
+                        <div class="right-side">
+                            <div class="vu-section">
+                                <div class="vu-label">
+                                    <h3>Title</h3>
+                                </div>
+                                <div class="vu-content" contenteditable="true">23</div>
+                            </div>
+                            <div class="vu-section">
+                                <div class="vu-label">
+                                    <h3>Type</h3>
+                                </div>
+                                <div class="vu-content" contenteditable="true">23</div>
+                            </div>
+                            <div class="vu-section">
+                                <div class="vu-label">
+                                    <h3>Space</h3>
+                                </div>
+                                <div class="vu-content" contenteditable="true">23</div>
+                            </div>
+                            <div class="vu-section">
+                                <div class="vu-label">
+                                    <h3>Price</h3>
+                                </div>
+                                <div class="vu-content" contenteditable="true">23</div>
+                            </div>
+                            <div class="vu-section">
+                                <div class="vu-label">
+                                    <h3>VU</h3>
+                                </div>
+                                <div class="vu-content" contenteditable="true">23</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                  
+                  <img
+                    src="photo/remove.png" alt></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </body>
+
+    </html>
