@@ -101,12 +101,11 @@
 
               <tr>
                 <td>2</td>
-                <td><img src="photo/Group 8.png" alt="Photo 2"
-                    style="max-width: 50px; max-height: 50px;"></td>
-                <td>Title 2</td>
-                <td>Type 2</td>
-                <td>Space 2</td>
-                <td>$1500</td>
+                <td><img src="photo/Group 8.png" alt="Photo 2" style="max-width: 50px; max-height: 50px;"></td>
+                <td id="titleCell">Title 2</td>
+                <td id="typeCell">Type 2</td>
+                <td id="spaceCell">Space 2</td>
+                <td id="priceCell">$1500</td>
                 <td>120</td>
                 <td>
                   <img class="boot" src="photo/edit.png" alt="" onclick="showContainer1();" onmouseout="removeShadow();">
@@ -124,27 +123,29 @@
                           <div class="vu-label">
                               <h3>Title</h3>
                           </div>
-                          <div class="vu-content" contenteditable="true">23</div>
+                          <div id="titleContent" class="vu-content" contenteditable="true">23</div>
                       </div>
                       <div class="vu-section">
                           <div class="vu-label">
                               <h3>Type</h3>
                           </div>
-                          <div class="vu-content" contenteditable="true">23</div>
+                          <div id="typeContent" class="vu-content" contenteditable="true">23</div>
                       </div>
                       <div class="vu-section">
                           <div class="vu-label">
                               <h3>Space</h3>
                           </div>
-                          <div class="vu-content" contenteditable="true">23</div>
+                          <div class="vu-content" id="spaceContent" contenteditable="true">23</div>
                       </div>
                       <div class="vu-section">
                           <div class="vu-label">
                               <h3>Price</h3>
                           </div>
-                          <div class="vu-content" contenteditable="true">23</div>
+                          <div class="vu-content" id="priceContent" contenteditable="true">23</div>
                       </div>
-                      <div class="right-bottom-button" ><img src="photo/editt.png" alt=""></div>
+                      <div class="right-bottom-button" onclick="handleEditClick('titleContent', 'typeContent', 'spaceContent', 'priceContent')">
+                        <img src="photo/editt.png" alt="">
+                    </div>
                   </div>
                   </div>
                   </div>

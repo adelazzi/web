@@ -80,3 +80,26 @@ function handlePhotoChange(event) {
     editIcon.style.display = 'block';
   }
 }
+
+function handleEditClick(titleId, typeId, spaceId, priceId) {
+  // Implement the logic for handling the edit click
+  const titleContent = document.getElementById(titleId);
+  const typeContent = document.getElementById(typeId);
+  const spaceContent = document.getElementById(spaceId);
+  const priceContent = document.getElementById(priceId);
+
+  // Replace the static values with your variables or dynamic content
+  const newTitle = prompt('Enter new title:', titleContent.innerText);
+  const newType = prompt('Enter new type:', typeContent.innerText);
+  const newSpace = prompt('Enter new space:', spaceContent.innerText);
+  const newPrice = prompt('Enter new price:', priceContent.innerText);
+
+  // Update the content with the new values
+  titleContent.innerText = newTitle;
+  typeContent.innerText = newType;
+  spaceContent.innerText = newSpace;
+  priceContent.innerText = newPrice;
+
+  
+
+}
