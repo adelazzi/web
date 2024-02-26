@@ -40,7 +40,7 @@
             </div>
           </div>
         </div>
-        <div class="cell">
+        <div class="cell"onclick="location.href='#section4';">
           <div class="container" style="background-color: #FFB5B5;">
             <img src="photo/error.png" alt="Avatar 2" class="avatar">
             <div class="text">
@@ -50,7 +50,7 @@
             </div>
 
           </div>
-          <div class="cell">
+          <div class="cell"onclick="location.href='#section5';">
             <div class="container" style="background-color: #AFB5AA;">
               <img src="photo/clock.png" alt="Avatar 4" class="avatar">
               <div class="text">
@@ -60,11 +60,11 @@
             </div>
           </div>
 
-          <div class="cell">
+          <div class="cell"onclick="location.href='#section6';">
             <div class="container" style="background-color: #ECEE9F;">
               <img src="photo/coin.png" alt="Avatar 1" class="avatar">
               <div class="text">
-                <h3>Ecepted</h3>
+                <h3>Payed</h3>
                 <p>23 order</p>
               </div>
             </div>
@@ -194,7 +194,7 @@
         <div id="section4">
           <div class="row">
             <img src="photo/error.png" alt="Avatar 1" class="avatar">
-            <h3>accepted 25 Requests </h3>
+            <h3>rejected 25 Requests </h3>
           </div>
 
           <table>
@@ -210,32 +210,8 @@
                 <th>Action</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td><img src="photo/Group 8.png" alt="Photo 1"
-                    style="max-width: 50px; max-height: 50px;"></td>
-                <td>Title 1</td>
-                <td>Type 1</td>
-                <td>Space 1</td>
-                <td>$1000</td>
-                <td>100</td>
-                <td><button>Action 1</button></td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td><img src="photo/Group 8.png" alt="Photo 2"
-                    style="max-width: 50px; max-height: 50px;"></td>
-                <td>Title 2</td>
-                <td>Type 2</td>
-                <td>Space 2</td>
-                <td>$1500</td>
-                <td>120</td>
-                <td><img class="boot" src="photo/edit.png" alt
-                    onclick="location.href='#section2';"><img
-                    src="photo/remove.png" alt></td>
-              </tr>
-                           <tr>
+
+                 <tr>
                 <td>2</td>
                 <td><img src="photo/Group 8.png" alt="Photo 2"
                     style="max-width: 50px; max-height: 50px;"></td>
@@ -298,7 +274,7 @@
                 
                   
                   <img
-                    src="photo/remove.png" alt></td>
+                    src="photo/resend.png" alt></td>
               </tr>
             </tbody>
           </table>
@@ -307,7 +283,7 @@
         <div id="section5">
           <div class="row">
             <img src="photo/clock.png" alt="Avatar 1" class="avatar">
-            <h3>accepted 25 Requests </h3>
+            <h3>On hold 25 Requests </h3>
           </div>
 
           <table>
@@ -420,10 +396,9 @@
         <div id="section6">
           <div class="row">
             <img src="photo/coin.png" alt="Avatar 1" class="avatar">
-            <h3>accepted 25 Requests </h3>
+            <h3>Payed 25 Requests </h3>
           </div>
-
-          <table>
+          <div class="table-container">          <table>
             <thead>
               <tr>
                 <th>ID</th>
@@ -433,20 +408,21 @@
                 <th>Space</th>
                 <th>Price</th>
                 <th>VU</th>
-                <th>Action</th>
+                <th>Payed</th>
               </tr>
             </thead>
             <tbody>
+             
               <tr>
-                <td>1</td>
-                <td><img src="photo/Group 8.png" alt="Photo 1"
+                <td>2</td>
+                <td><img src="photo/Group 8.png" alt="Photo 2"
                     style="max-width: 50px; max-height: 50px;"></td>
-                <td>Title 1</td>
-                <td>Type 1</td>
-                <td>Space 1</td>
-                <td>$1000</td>
-                <td>100</td>
-                <td><button>Action 1</button></td>
+                <td>Title 2</td>
+                <td>Type 2</td>
+                <td>Space 2</td>
+                <td>$1500</td>
+                <td>120</td>
+                <td>23423</td>
               </tr>
               <tr>
                 <td>2</td>
@@ -457,11 +433,9 @@
                 <td>Space 2</td>
                 <td>$1500</td>
                 <td>120</td>
-                <td><img class="boot" src="photo/edit.png" alt
-                    onclick="location.href='#section2';"><img
-                    src="photo/remove.png" alt></td>
+                <td>23423</td>
               </tr>
-                           <tr>
+              <tr>
                 <td>2</td>
                 <td><img src="photo/Group 8.png" alt="Photo 2"
                     style="max-width: 50px; max-height: 50px;"></td>
@@ -470,64 +444,45 @@
                 <td>Space 2</td>
                 <td>$1500</td>
                 <td>120</td>
-                <td>
-                  <img class="boot" src="photo/edit.png" alt="" onclick="showContainer1();" onmouseover="addShadow();" onmouseout="removeShadow();">
-                  <div id="overlay" onclick="hideContainer1();"></div>
-                  <div id="container1">
-                    <div class="container-content">
-                        <!-- Left side -->
-                        <div class="left-side">
-                  <label for="photoInput"><h1>Photo</h1></label>
-                  <div class="sidephoto"><p>photo 1</p></div>
-                  <div class="otherphoto"><p>photos</p></div>
-                  
-              </div>
-                
-                        <!-- Separator -->
-
-                        <div class="tdd"></div>
-                        <!-- Right side -->
-                        <div class="right-side">
-                            <div class="vu-section">
-                                <div class="vu-label">
-                                    <h3>Title</h3>
-                                </div>
-                                <div class="vu-content" contenteditable="true">23</div>
-                            </div>
-                            <div class="vu-section">
-                                <div class="vu-label">
-                                    <h3>Type</h3>
-                                </div>
-                                <div class="vu-content" contenteditable="true">23</div>
-                            </div>
-                            <div class="vu-section">
-                                <div class="vu-label">
-                                    <h3>Space</h3>
-                                </div>
-                                <div class="vu-content" contenteditable="true">23</div>
-                            </div>
-                            <div class="vu-section">
-                                <div class="vu-label">
-                                    <h3>Price</h3>
-                                </div>
-                                <div class="vu-content" contenteditable="true">23</div>
-                            </div>
-                            <div class="vu-section">
-                                <div class="vu-label">
-                                    <h3>VU</h3>
-                                </div>
-                                <div class="vu-content" contenteditable="true">23</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                  
-                  <img
-                    src="photo/remove.png" alt></td>
+                <td>23423</td>
               </tr>
+              <tr>
+                <td>2</td>
+                <td><img src="photo/Group 8.png" alt="Photo 2"
+                    style="max-width: 50px; max-height: 50px;"></td>
+                <td>Title 2</td>
+                <td>Type 2</td>
+                <td>Space 2</td>
+                <td>$1500</td>
+                <td>120</td>
+                <td>23423</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><img src="photo/Group 8.png" alt="Photo 2"
+                    style="max-width: 50px; max-height: 50px;"></td>
+                <td>Title 2</td>
+                <td>Type 2</td>
+                <td>Space 2</td>
+                <td>$1500</td>
+                <td>120</td>
+                <td>23423</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><img src="photo/Group 8.png" alt="Photo 2"
+                    style="max-width: 50px; max-height: 50px;"></td>
+                <td>Title 2</td>
+                <td>Type 2</td>
+                <td>Space 2</td>
+                <td>$1500</td>
+                <td>120</td>
+                <td>23423</td>
+              </tr>
+                
             </tbody>
           </table>
+</div>
 
         </div>
       </body>

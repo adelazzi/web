@@ -185,11 +185,19 @@ body {
     overflow-y: auto; /* Enable vertical scrollbar if needed */
 }
 
+.table-container {
+  width: 95%;
+  margin-left: 2%;
+  max-height: 200px; /* Set a maximum height for the container */
+  overflow-y: auto; /* Enable vertical scrollbar if needed */
+}
+
 table {
     width: 95%;
     border-collapse: collapse;
     margin-left:2% ;
-}
+    overflow:hidden;
+  }
 
 th, td {
     border: 1px solid black;
