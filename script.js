@@ -49,4 +49,34 @@ document.addEventListener("DOMContentLoaded", function () {
           paragraph.textContent += text[index];
       }, i * 50, i);
   }
-});
+});function addPhoto() {
+  // Assuming you have an input field for selecting a photo
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = 'image/*';
+  input.addEventListener('change', handlePhotoChange);
+  input.click();
+}
+
+function handlePhotoChange(event) {
+  const photoContainer = document.getElementById('photoContainer');
+  const existingPhoto = photoContainer.querySelector('img');
+  const editIcon = document.getElementById('editIcon');
+
+
+
+  const file = event.target.files[0];
+  if (file) {
+    const img = document.createElement('img');
+    img.src = URL.createObjectURL(file);
+    img.style.maxWidth = '100%';
+    img.style.maxHeight = '100%';
+    img.style.borderRadius = '10px';
+
+    photoContainer.innerHTML = ''; // Clear any existing content
+    photoContainer.appendChild(img);
+
+    // Display the edit icon
+    editIcon.style.display = 'block';
+  }
+}
